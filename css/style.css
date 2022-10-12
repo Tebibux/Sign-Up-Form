@@ -19,10 +19,6 @@
 	justify-content: center;
 }
 
-.aside_left {
-	width: 65vw;
-}
-
 .aside_right,
 .aside_left {
 	height: 100%;
@@ -51,13 +47,80 @@
 }
 
 .aside_right {
-	background: center url(/image/anubhav-rana-x2LStfRm7g0-unsplash.jpg);
+	background: no-repeat url(/image/anubhav-rana-x2LStfRm7g0-unsplash.jpg);
+	background-size: cover;
+	height: 100%;
 	width: 35vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 }
-.aside_left{
 
+.aside_left {
+	width: 65vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 5%;
+	padding-left: 1.5%;
+
+}
+
+.aside_left h3 {
+	font-size: 25px;
+}
+
+.texts {
+	padding-right: 100px;
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.texts h3 {
+	font-weight: bold;
+}
+
+.form_div {
+	width: 99%;
+	height: 40%;
+}
+
+.form_data {
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	gap: 70px;
+	padding: 10px 20px;
+	box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.25);
+}
+
+.l_data,
+.r_data {
+	margin: 10px 0;
+	width: 30%;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+}
+
+legend {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	margin-top: 5px 0;
+	height: 25px;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 1.1rem;
+	border: 3px solid #E5E7EB;
 }
