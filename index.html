@@ -35,28 +35,28 @@
 			</div>
 
 			<div class="form_div">
-				<form action="#" method="get">
+				<form onsubmit="return checkPassword()" action="#" method="get">
 					<legend>Let's do this!</legend>
 					<div class="form_data">
 						<div class="l_data">
 							<label for="fname">First Name</label>
-							<input type="text" name="_input" id="fname">
+							<input type="text" name="_input" id="fname" required>
 							<label for="email">E-mail</label>
-							<input type="email" name="_input" id="email">
+							<input type="email" name="_input" id="email" required>
 							<label for="password">Password</label>
-							<input type="password" name="_input" id="password">
+							<input type="password" name="_input" id="password" required>
 						</div>
 						<div class="r_data">
 							<label for="lname">Last Name</label>
-							<input type="text" name="_input" id="lname">
+							<input type="text" name="_input" id="lname" required>
 							<label for="tele">Phone Number</label>
-							<input type="tel" name="_input" id="tele">
+							<input type="tel" name="_input" id="tele" required>
 							<label for="confirm">Confirm Password</label>
-							<input type="password" name="_input" id="confirm">
+							<input type="password" name="_input" id="confirm" required>
 						</div>
 					</div>
 					<div class="form_submit">
-						<button type="submit">Create Account</button>
+						<input class="button"type="submit" value="Create Account">
 					</div>
 				</form>
 				<div class="last_elem">Already have an account? <a href="#">Log in</a></div>
@@ -64,5 +64,12 @@
 		</div>
 	</div>
 </body>
+<script>
+	function checkPassword() {
+		var pwd = document.getElementById('password').value;
+		var c_pwd = document.getElementById('confirm').value;
+		if(pwd !== c_pwd) alert('Password doesn\'t match!!');
+	}
+</script>
 
 </html>
